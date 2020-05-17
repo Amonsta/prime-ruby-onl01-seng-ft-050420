@@ -2,12 +2,10 @@
 
 
 def prime?(number)
-  if (2..number).any?{|n| n % n == 0}
+  if (2..number).any?{|n| number % n == 0}
     true 
   elsif number <= 1  
     false
-  else 
-    false 
   end  
 end
 
