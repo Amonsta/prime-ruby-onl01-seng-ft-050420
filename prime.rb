@@ -10,7 +10,8 @@ def prime?(number)
     false
   elsif (2..number-1).all?{|n| number % n != 0} 
     true 
-  end  
+  end 
+  false 
 end
 
 
