@@ -4,10 +4,10 @@
 def prime?(number)
   if number <= 1  
     false
-  elsif  
-     
-  else
-    
+  elsif  number % 2 == 0  
+    false
+  elsif number % 2 != 0 
+    true
   end  
 end
 
