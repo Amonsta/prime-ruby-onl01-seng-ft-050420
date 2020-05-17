@@ -6,7 +6,7 @@ def prime?(number)
     false
   elsif  number % 2 == 0  
     false
-  elsif number % 2 != 0 
+  elsif (2..number-1).any?{|n| number % n == 0} 
     true
   end  
 end
