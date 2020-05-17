@@ -4,8 +4,10 @@
 def prime?(number)
   if number <= 1  
     false
+  elsif number == 2 
+    true 
   else 
-    (2..number-1).all?{|n| number % n != 0} 
+    (2..number-1).none?{|n| number % n == 0} 
   end 
    
 end
@@ -17,8 +19,7 @@ end
 if my number is not prime, print FALSE
 use a boolean meathod (?:)
 
-elsif number == 2 
-    true 
+
     
 (2..number).any?{|n| n % 2 == 0}
 
