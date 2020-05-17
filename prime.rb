@@ -6,10 +6,8 @@ def prime?(number)
     false
   elsif number == 2 
     true 
-  elsif (2..number-1).all?{|n| number % n != 0} 
-    true 
-  else
-    false
+  else 
+    (2..number-1).all?{|n| number % n != 0} 
   end 
    
 end
